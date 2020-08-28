@@ -1,15 +1,3 @@
---ЧЕК ЛИСТ ПЕРЕД ЗАПУСКОМ!
---в OnTrade для Price используется округление! УБРАТЬ ЕГО ЕСЛИ ИСПОЛЬЗУЕТСЯ ДРОБНАЯ ЦЕНА!!!!
---1) Проверить стоп-цену
---2) Проверить инструмент
---3) Проверить тайм-фрейм и корретность графиков
---4) Проверить корректность условий для лонга/шорта
---5) Выставить верную дату
---6) Проверить номер счета
---7) Проверить id первой транзакции
-
---БЫЛО ДОБАВЛЕНО УСЛОВИЕ - ПРОВЕРИТЬ
-
 function LOGGING(text, param)
 	stime = GetInfoParam("SERVERTIME")
 	LogFile:write(stime..": "..text..": "..param.."\n")
@@ -167,13 +155,13 @@ function sell(prc, qty)
 end
 
 function logic(day, month,prc) 
-	sber = -get_sber_direction(day,month) -- КОРРЕКТНОСТЬ УСЛОВИЙ ПРОВЕРЯЕТСЯ ЗДЕСЬ!!!!!!!!! ДЛЯ Si нужен минус, а для RI нет
+	sber = -get_sber_direction(day,month) --  ДЛЯ Si нужен минус, а для RI нет
 	LOGGING("Got SBER direction",tostring(sber))
 
-	lkoh = -get_lkoh_direction(day,month) -- КОРРЕКТНОСТЬ УСЛОВИЙ ПРОВЕРЯЕТСЯ ЗДЕСЬ!!!!!!!!!
+	lkoh = -get_lkoh_direction(day,month) -- ДЛЯ Si нужен минус, а для RI нет
 	LOGGING("Got LKOH direction",tostring(lkoh))
 
-	gazp = -get_gazp_direction(day,month) -- КОРРЕКТНОСТЬ УСЛОВИЙ ПРОВЕРЯЕТСЯ ЗДЕСЬ!!!!!!!!!
+	gazp = -get_gazp_direction(day,month) -- ДЛЯ Si нужен минус, а для RI нет
 	LOGGING("Got GAZP direction",tostring(gazp))
 
 	message(tostring(sber)..tostring(gazp)..tostring(lkoh))
