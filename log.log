@@ -1,0 +1,80 @@
+12:22:09: 23.7: 
+12:22:34: 23.7: 
+12:22:47: 22.7: 
+12:22:47: Got SBER direction: 1
+12:22:47: Got LKOH direction: -1
+12:22:47: Got GAZP direction: -1
+12:24:38: 22.7: 
+12:24:38: Got SBER direction: -1
+12:24:38: Got LKOH direction: -1
+12:24:38: Got GAZP direction: -1
+12:24:38: Sell transaction is sent: 
+12:24:38: Trade is done: Price:71323, Quantity:1.0
+12:24:38: Trade is done: Price:71323, Quantity:1.0
+12:24:38: Trade is done: Price:71323, Quantity:1.0
+12:24:38: Take-profit and Stop-limit transaction is sent: Take-prof:71273, Stop-lim:71423
+9:52:37: 23.7: 
+9:59:45: Got SBER direction: -1
+9:59:45: Got LKOH direction: 1
+9:59:45: Got GAZP direction: -1
+9:49:39: 24.7: 
+9:59:25: Got SBER direction: 1
+9:59:25: Got LKOH direction: 1
+9:59:25: Got GAZP direction: 1
+9:59:25: Buy transaction is sent: 
+9:59:52: 24.7: 
+9:59:52: Got SBER direction: 1
+9:59:52: Got LKOH direction: 1
+9:59:52: Got GAZP direction: 1
+9:59:52: Buy transaction is sent: 
+10:00:04: 24.7: 
+10:00:04: Got SBER direction: 1
+10:00:04: Got LKOH direction: 1
+10:00:04: Got GAZP direction: -1
+10:00:11: 24.7: 
+10:00:11: Got SBER direction: 1
+10:00:11: Got LKOH direction: 1
+10:00:11: Got GAZP direction: -1
+10:05:33: 24.7: 
+10:07:13: 24.7: 
+10:11:22: 24.7: 
+10:13:00: Got SBER direction: 1
+10:13:00: Got LKOH direction: 1
+10:13:00: Got GAZP direction: -1
+10:13:31: 24.7: 
+10:15:01: Got SBER direction: 1
+10:15:01: Got LKOH direction: 1
+10:15:01: Got GAZP direction: -1
+9:54:00: 27.7: 
+: 27.7: 
+10:00:00: Got SBER direction: -1
+10:00:00: Got LKOH direction: -1
+10:00:00: Got GAZP direction: -1
+10:00:00: Sell transaction is sent: 
+10:00:02: Trade is done: Price:71911, Quantity:1.0
+10:00:02: Trade is done: Price:71911, Quantity:1.0
+10:00:02: Trade is done: Price:71911, Quantity:1.0
+10:00:02: Take-profit and Stop-limit transaction is sent: Take-prof:71861, Stop-lim:72011
+9:44:18: 30.7: 
+9:54:26: 30.7: 
+10:00:00: Got SBER direction: 1
+10:00:00: Got LKOH direction: 1
+10:00:00: Got GAZP direction: 1
+10:00:00: Buy transaction is sent: 
+10:00:06: Trade is done: Price:73520, Quantity:1.0
+10:00:06: Trade is done: Price:73520, Quantity:1.0
+10:00:06: Trade is done: Price:73520, Quantity:1.0
+10:00:06: Take-profit and Stop-limit transaction is sent: Take-prof:73570, Stop-lim:73420
+9:47:07: 3.8: 
+10:00:00: Got SBER direction: -1
+10:00:00: Got LKOH direction: 1
+10:00:00: Got GAZP direction: 1
+9:46:28: 4.8: 
+10:00:00: Got SBER direction: -1
+10:00:00: Got LKOH direction: -1
+10:00:00: Got GAZP direction: -1
+10:00:00: Sell transaction is sent: 
+10:00:03: Trade is done: Price:73276, Quantity:1.0
+10:00:03: Trade is done: Price:73276, Quantity:1.0
+10:00:03: Trade is done: Price:73276, Quantity:1.0
+10:00:03: Take-profit and Stop-limit transaction is sent: Take-prof:73226, Stop-lim:73376
