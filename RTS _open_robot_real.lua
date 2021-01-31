@@ -5,7 +5,7 @@ end
 
 function OnTrade(trade)
 	Sec_code = trade["sec_code"]
-	Price = math.floor(trade["price"]) --округление
+	Price = math.floor(trade["price"]) --Г®ГЄГ°ГіГЈГ«ГҐГ­ГЁГҐ
 	Qty = trade["qty"]	
 	LOGGING("Trade is done","Price:"..tostring(Price)..", Quantity:"..tostring(Qty))
 end
@@ -35,7 +35,7 @@ end
 function get_gazp_direction(day, month)
 	price = get_candles("GAZP",2)
 	stime = GetInfoParam("SERVERTIME")
-	while (price[1]["datetime"]["day"]~=day) or (price[1]["datetime"]["month"]~=month) or (stime~="10:00:00" and stime ~="10:00:01" and stime ~="10:00:02") do --проверить новое условие
+	while (price[1]["datetime"]["day"]~=day) or (price[1]["datetime"]["month"]~=month) or (stime~="10:00:00" and stime ~="10:00:01" and stime ~="10:00:02") do --ГЇГ°Г®ГўГҐГ°ГЁГІГј Г­Г®ГўГ®ГҐ ГіГ±Г«Г®ГўГЁГҐ
 		stime = GetInfoParam("SERVERTIME")
 		price = get_candles("GAZP",2)
 		sleep(10)
@@ -155,13 +155,13 @@ function sell(prc, qty)
 end
 
 function logic(day, month,prc) 
-	sber = -get_sber_direction(day,month) --  ДЛЯ Si нужен минус, а для RI нет
+	sber = -get_sber_direction(day,month) --  Г„Г‹Гџ Si Г­ГіГ¦ГҐГ­ Г¬ГЁГ­ГіГ±, Г  Г¤Г«Гї RI Г­ГҐГІ
 	LOGGING("Got SBER direction",tostring(sber))
 
-	lkoh = -get_lkoh_direction(day,month) -- ДЛЯ Si нужен минус, а для RI нет
+	lkoh = -get_lkoh_direction(day,month) -- Г„Г‹Гџ Si Г­ГіГ¦ГҐГ­ Г¬ГЁГ­ГіГ±, Г  Г¤Г«Гї RI Г­ГҐГІ
 	LOGGING("Got LKOH direction",tostring(lkoh))
 
-	gazp = -get_gazp_direction(day,month) -- ДЛЯ Si нужен минус, а для RI нет
+	gazp = -get_gazp_direction(day,month) -- Г„Г‹Гџ Si Г­ГіГ¦ГҐГ­ Г¬ГЁГ­ГіГ±, Г  Г¤Г«Гї RI Г­ГҐГІ
 	LOGGING("Got GAZP direction",tostring(gazp))
 
 	message(tostring(sber)..tostring(gazp)..tostring(lkoh))
@@ -197,7 +197,7 @@ function main()
 	id = 1
 	Price = 0
 	Qty = 0
-	Account = "7666jq8"
+	Account = ""
 	Seccode = "SiU0"
 
 	logic(DAY,MONTH,PRC)
